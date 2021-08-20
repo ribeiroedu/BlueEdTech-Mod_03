@@ -64,12 +64,11 @@ app.put('/filmes/:id', (req, res) => {
 //delete - delete
 app.delete('/filmes/:id', (req, res) => {
     const id = req.params.id -1;
-    const filme = filmes[id];
     if(!filme) {
-        res.send('Filme não encontrado!')
+        res.send('Filme não encontrado!');
     }
-    delete filme
-    res.send('Filme excluído com sucesso!')
+    delete filmes[id]
+    res.send('Filme excluído com sucesso!');
 });
 
 
