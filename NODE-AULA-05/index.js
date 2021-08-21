@@ -159,5 +159,5 @@ app.delete("/filmesSplice/:id", (req, res) => {
 
 //Definicao do listener passando a porta do servico
 app.listen(port, function () {
-  console.info(`App rodandooooooooo na porta http://localhost:${port}/`);
+  console.info(`App rodando na porta http://localhost:${port}/`);
 });
